@@ -78,6 +78,7 @@ public class UserDao {
 				u.setSex(rs.getString("sex"));
 				u.setCountry(rs.getString("country"));
 			}
+			rs.close();
 		} catch(Exception e) {
 			System.out.println(e);
 		}
@@ -102,6 +103,7 @@ public class UserDao {
 				u.setCountry(rs.getString("country"));
 				list.add(u);
 			}
+			rs.close();
 		} catch(Exception e) {
 			System.out.println(e);
 		}
