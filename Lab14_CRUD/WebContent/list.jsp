@@ -3,6 +3,7 @@
 <%@ page
 	import="com.lab14.bean.BookVO,com.lab14.dao.BookDao,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
 <!DOCTYPE html>
 <html>
@@ -48,7 +49,7 @@
 		</nav>
 	</header>
 	
-	<h1>List of Books</h1>
+	<h1>List of Books(${fn:length(list) })</h1>
 
 	<table class="table table-hover">
 		<tr>
