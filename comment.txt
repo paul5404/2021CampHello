@@ -1,0 +1,31 @@
+<다이내믹 웹 프로젝트 생성 후 heroku로 deploy하는 과정>
+
+Dynamic web project 생성
+
+Configure - Convert to Maven project
+
+Pom.xml: <failOnMissingXml>
+false 
+추가 in Configuration tag
+
+Build path - JDK version 1.8로 설정
+
+Run As - Maven install
+
+Heroku - app 생성
+
+heroku create app_name(unique!!)
+
+heroku open --app hgujeonghyun
+
+1. 터미널에서 프로젝트 들어가신 뒤
+2. brew install maven (메이븐 설치)
+3. 메이븐 설치 후 mvn package 입력
+4. cd target으로 target에 들어간 뒤 heroku war:deploy <path_to_war_file> —app <app_name>
+
+
+<Spring FrameWork 동작원리>
+Tomcat: web.xml로 처음 이동 (DispatcherServlet) -> servlet-context.xml -> img 호출시 경로 설정,ViewResolver, 패키지 scan
+-> Handling Mapping (알맞은 controller)
+ 
+더 많은 자료: https://www.javatpoint.com/spring-mvc-crud-example 
